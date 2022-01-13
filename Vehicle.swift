@@ -9,6 +9,7 @@
 //  This class is a Vehicle blueprint.
 //
 
+// Equivalent of an abstract class in Swift
 protocol Vehicle {
     // Vehicle max speed
     var maxSpeed: Int { get }
@@ -20,6 +21,7 @@ protocol Vehicle {
     var numOfTires: Int { get }
 }
 
+// Default functions for Vehicle subclasses
 extension Vehicle {
     // Increases the speed
     mutating func accelerate(accelerateBy: Int) {
