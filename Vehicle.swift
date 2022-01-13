@@ -9,19 +9,27 @@
 //  This class is a Vehicle blueprint.
 //
 
-// The class of a vehicle
-public class Vehicle {
+protocol VehicleProtocol {
+    var maxSpeed: Int { get }
+    var speed: Int { get set }
+    var colour: String { get set }
+    var numOfTires: Int { get }
+}
 
+public class Vehicle: VehicleProtocol {
     let maxSpeed: Int
     internal var speed: Int
     var colour: String
     let numOfTires: Int
 
-    // Initializes a Vehicle
-    internal init (newMaxSpeed: Int, newColour: String, theNumOfTires: Int) {
+    init(
+        newMaxSpeed: Int,
+        newColour: String,
+        newNumOfTires: Int
+    ) {
         self.maxSpeed = newMaxSpeed
         self.colour = newColour
-        self.numOfTires = theNumOfTires
+        self.numOfTires = newNumOfTires
         self.speed = 0
     }
 

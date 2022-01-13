@@ -17,15 +17,15 @@ public class Truck: Vehicle {
     // Instantiates a Truck
     init(
         newColour: String,
-        newMaxSpeed: Int,
+        maxSpeed: Int,
         newLicensePlate: String,
         numOfTires: Int
     ) {
         self.licensePlate = newLicensePlate
         super.init(
-            newMaxSpeed: newMaxSpeed,
+            newMaxSpeed: maxSpeed,
             newColour: newColour,
-            theNumOfTires: numOfTires
+            newNumOfTires: numOfTires
         )
     }
 

@@ -15,12 +15,12 @@ public class Bike: Vehicle {
     var cadence: Int
 
     // Instantiates a Bike
-    init(newColour: String, newMaxSpeed: Int, numOfTires: Int) {
+    init(newColour: String, maxSpeed: Int, numOfTires: Int) {
         self.cadence = 0
         super.init(
-            newMaxSpeed: newMaxSpeed,
+            newMaxSpeed: maxSpeed,
             newColour: newColour,
-            theNumOfTires: numOfTires
+            newNumOfTires: numOfTires
         )
     }
 
