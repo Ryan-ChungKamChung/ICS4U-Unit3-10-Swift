@@ -10,10 +10,10 @@
 //
 
 // Stub program to demonstrate the Vehicle subclasses
-let truck = Truck(newColour: "Red", maxSpeed: 250,
+var truck = Truck(newColour: "Red", maxSpeed: 250,
     newLicensePlate: "ASDF123", numOfTires: 4)
 
-let bike = Bike(newColour: "Blue", maxSpeed: 75, numOfTires: 2)
+var bike = Bike(newColour: "Blue", maxSpeed: 75, numOfTires: 2)
 
 truck.licensePlate = "ASDF111"
 truck.colour = "Black"
