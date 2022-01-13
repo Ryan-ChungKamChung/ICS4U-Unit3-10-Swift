@@ -10,9 +10,13 @@
 //
 
 protocol Vehicle {
+    // Vehicle max speed
     var maxSpeed: Int { get }
+    // Current speed
     var speed: Int { get set }
+    // Vehicle colour
     var colour: String { get set }
+    // Number of tires
     var numOfTires: Int { get }
 }
 
